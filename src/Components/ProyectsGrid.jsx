@@ -1,3 +1,6 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import heroesAppImage from "../Images/HeroesApp.png"
 import gifsAppImage from "../Images/gifsApp.png"
 import exampleImage from "../Images/Ejemplo.png"
@@ -7,8 +10,14 @@ import jsIcon from "../Icons/js.png"
 import reactIcon from "../Icons/react.png"
 
 export const ProyectsGrid = () => {
+    useEffect(() => {
+            AOS.init({
+            duration: 800,
+            once: true,  
+            });
+         }, []);
   return (
-    <div className="proyects-grid">
+    <div className="proyects-grid" data-aos="fade-up">
         <div className="proyect-card">
             <div className="header-Proyect-card">
             <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
