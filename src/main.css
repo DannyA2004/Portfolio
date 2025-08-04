@@ -2,13 +2,14 @@
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     background-image: url("/src/Images/Fondo.jpg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
     /* background-color: black;    */
-    backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px); */
 }
 
 .navbar {
@@ -19,6 +20,12 @@ body {
     top: 0;
     margin-bottom: 10px;
     z-index: 10;
+    align-items: center;
+}
+
+.personal-logo {
+    width: 250px;
+    height: 70px;
 }
 
 .nav-list {
@@ -40,10 +47,10 @@ body {
 }
 
 .card-container{
-    display: block;
+    display: flex;
     justify-content: center;
     margin: 0 auto 0 auto;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(100px);
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.6);
     max-width: 800px;
 }
@@ -51,21 +58,20 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 10px 5px 10px 10px;
 }
 
 .blur-container{
-    padding: 3px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     backdrop-filter: blur(50px);
-    margin-top: 15px;
-    border-radius: 10%;
+    border-radius: 15%;
     box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.8)
 }
 
 .card-photo {
     width: 225px;
     height: 300px;
-    border-radius: 10%;
-    margin-top: 10px;
+    border-radius: 15%;
     box-shadow: 0px 0px 20px rgba(256, 256, 256, .8);
 }
 
@@ -73,6 +79,7 @@ body {
     align-content: center;
     justify-items: center;
 }
+
 .my-name {
     display: flex;
     align-items: center;
@@ -126,7 +133,8 @@ body {
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.9);
     width: 500px;
     justify-items: center;
-    backdrop-filter: blur(5px);
+    background-color:#151314 ;
+    /* backdrop-filter: blur(50px); */
     border-radius: 15%;
     border: solid 4px black;
     border-top: 0;
@@ -139,12 +147,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .header-Proyect-card{
-    padding: 0px 0px 0px 0px;
-    margin-left:0px ;
+    margin-top: 0px;
 }
 .proyects-images{
     width: 500px;
     border-radius: 15%;
+    height: 350px;
     /* border: solid 5px rgb(124, 124, 124); */
   
 }
@@ -167,6 +175,7 @@ body {
     width: 60px;
     margin-right: 30px;
     margin-left: 30px;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
 }
 
 #tecnologiesScroll{
@@ -190,7 +199,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #FFFFFF;
     text-shadow: 2px 2px 4px gray;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(100px);
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -221,21 +230,68 @@ body {
     scale: 1.1;
 }
 
-.footer{
-    background-color: rgb(235, 235, 235);
+.contact{
     display: flex;
     justify-content: center;
 }
 .contact-box{
+    backdrop-filter: blur(100px);
+    /* background-color: rgb(235, 235, 235); */
     border: solid black 1px;
-    width: 40%;
+    min-width: 700px;
+    min-height: 50vh;
     text-align: center;
     margin: 20px 0 20px 0;
     font-family: 'Courier New', Courier, monospace;
 
 }
-.contact-box h3 {
-    font-size: 35px;
+.contact-box h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
+}
+.contact form {
+    justify-items: center ;
+}
+
+.input-box
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
 }
 
 .email-div{
@@ -248,10 +304,19 @@ body {
     font-size: 30px;
     font-weight: 600;
     margin-right: 30px; 
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
 }
 
 .email {
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.8)
+    min-width: 250px;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #ededed;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
