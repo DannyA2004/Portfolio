@@ -11,7 +11,6 @@ body {
     /* background-color: black;    */
     /* backdrop-filter: blur(30px); */
 }
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -21,11 +20,6 @@ body {
     margin-bottom: 10px;
     z-index: 10;
     align-items: center;
-}
-
-.personal-logo {
-    width: 250px;
-    height: 70px;
 }
 
 .nav-list {
@@ -52,7 +46,7 @@ body {
     margin: 0 auto 0 auto;
     backdrop-filter: blur(100px);
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.6);
-    max-width: 800px;
+    max-width: 900px;
 }
 .photo-container{
     align-items: center;
@@ -63,16 +57,16 @@ body {
 
 .blur-container{
     padding: 5px 5px 5px 5px;
-    backdrop-filter: blur(50px);
     border-radius: 15%;
-    box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.8)
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.8)
 }
 
 .card-photo {
     width: 225px;
     height: 300px;
     border-radius: 15%;
-    box-shadow: 0px 0px 20px rgba(256, 256, 256, .8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 .presentation-card{
@@ -83,30 +77,28 @@ body {
 .my-name {
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #0ef;
+    text-shadow: 2px 2px 5px rgb(55, 162, 170);
     font-family: "Montserrat";
-    font-weight: 300;
+    font-weight: 400;
     font-size: 40px;
     margin-top: 5px;
 }
 .career-text {
-    color: 	#A8FF60;
-    margin-right: 10px;
+    color: 	white;
     font-family: "Roboto Mono";
-    font-weight: 700;
-    text-align: center;
-}
-
-.percent-icon{
-    max-width: 70px;
-    max-height: 70px;
+    font-weight: 600;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 20px;
 }
 .presentation-text {
-    color: #95ff3d;
+    color: white;
     font-family: "Roboto Mono";
     font-weight: 500;
-    width: 70%;
-    text-align: center;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 .titles{
@@ -237,7 +229,7 @@ body {
 .contact-box{
     backdrop-filter: blur(100px);
     /* background-color: rgb(235, 235, 235); */
-    border: solid black 1px;
+    border: solid #0ef 2px;
     min-width: 700px;
     min-height: 50vh;
     text-align: center;
@@ -256,7 +248,16 @@ body {
     justify-items: center ;
 }
 
-.input-box
+.input-field {
+    margin-bottom: 25px
+}
+
+.error {
+    color: red;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px rgb(185, 0, 0);
+}
 
 .field .item {
     width: 100%;
@@ -288,6 +289,7 @@ form button {
     color: black;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 20px;
     transition: .5s;
 }
 form button:hover{
@@ -298,6 +300,7 @@ form button:hover{
     display: flex;
     justify-content: center;
     align-items: center;  
+    margin-bottom: 20px;
 }
 
 .email-text {
@@ -319,4 +322,316 @@ form button:hover{
     color: #ededed;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+.copy-btn{
+    margin-left: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.copy-btn:active{
+    transform: scale(.95);
+    box-shadow: 0  0 5px #0ef;
+}
+
+.copy-icon{
+    width: 40px;
+}
+
+@media (max-width: 550px) {
+    .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    z-index: 10;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-list li a {
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    margin: 0 10px 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.card-container{
+    display: block;
+    max-width: 85%;
+}
+
+.blur-container{
+    margin-top: 20px;
+}
+
+.card-photo {
+    width: 150px;
+    height: 200px;
+}
+
+.my-name {
+    font-size: 20px;
+    
+}
+.career-text {
+    color: 	white;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.presentation-text {
+    color: white;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.titles{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+#proyectsScroll{
+    margin-bottom: 60px;
+}
+.proyects-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.proyect-card{ 
+    box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.9);
+    width: 300px;
+    justify-items: center;
+    background-color:#151314 ;
+    border-radius: 15%;
+    border: solid 4px black;
+    border-top: 0;
+    padding: 0 1px 0 1px;
+}
+.proyect-card h3{
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header-Proyect-card{
+    margin-top: 0px;
+}
+.proyects-images{
+    width: 300px;
+    border-radius: 15%;
+    height: 250px;
+    /* border: solid 5px rgb(124, 124, 124); */
+  
+}
+
+.proyects-images:hover{
+    position: relative; /* Necesario para el efecto de perspectiva */
+  transform: perspective(500px)  rotateZ(5deg) rotateX(1deg); /* Ajusta la perspectiva y el ángulo */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), /* Sombra principal */
+              -5px -5px 15px rgba(0, 0, 0, 0.3); /* Sombra secundaria */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.tecnologies-used-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tecnologies-used-card img{
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+
+#tecnologiesScroll{
+    margin-bottom: 60px;
+}
+.tecnologies-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(10px, auto);
+    column-gap: 0px;
+    justify-items: center;
+    height: auto;
+    margin-top: 30px;
+}
+
+.tecnologie-card {
+    box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.6);
+    width: 150px;
+    height: 170px;
+    justify-items: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
+    backdrop-filter: blur(100px);
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    animation-name: flip-once;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.tecnologie-image-div img {
+    max-width: 80px;
+    margin-top: 20px;
+}
+.tecnologie-card:hover{
+    scale: 1.1;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact-box{
+    backdrop-filter: blur(100px);
+    /* background-color: rgb(235, 235, 235); */
+    border: solid #0ef 2px;
+    min-width: 300px;
+    min-height: 50vh;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-box h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
+}
+.contact form {
+    justify-items: center ;
+}
+
+.input-field {
+    margin-bottom: 15px
+}
+
+.error {
+    color: red;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px rgb(185, 0, 0);
+    font-size: 15px;
+}
+
+.field .item {
+    width: 60%;
+    height: 5px;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+form .textarea-field .item {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
+}
+
+.email-div{
+    display: block;
+    justify-content: center;
+}
+
+.email-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 0px; 
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.email {
+    min-width: 180px;
+    height: 5px;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #ededed;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.email-and-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.copy-btn{
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 45px;
+
+}
+
+.copy-btn:active{
+    transform: scale(.95);
+    box-shadow: 0  0 5px #0ef;
+}
+
+.copy-icon{
+    width: 30px;
+}
 }

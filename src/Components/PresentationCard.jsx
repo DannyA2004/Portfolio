@@ -25,8 +25,8 @@ export const PresentationCard = () => {
         </div>
         <div className="presentation-card">
               <h2 className="my-name">H{displayedText}</h2>
-              <h2 className="career-text">Soy un estudiante de Ing. en Software a punto de egresar</h2>
-            <h3 className="presentation-text">Actualmente con mayor conocimiento en el FrontEnd pero cada dia aprendiendo mas sobre backend</h3>
+              <h2 className="career-text">Soy un estudiante de Ing. en Software a punto de egresar.</h2>
+            <h3 className="presentation-text">Actualmente con mayor conocimiento en el FrontEnd pero cada dia aprendiendo mas sobre backend.</h3>
         </div>
     </div>
   )
