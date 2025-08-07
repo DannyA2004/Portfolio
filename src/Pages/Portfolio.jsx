@@ -24,6 +24,7 @@ export const Portfolio = () => {
       <p id="proyectsScroll"></p>
       <h2 data-aos="zoom-in" className="titles" id="proyects">PROYECTS</h2>
       <ProyectsGrid/>
+      <p id="contactScroll"></p>
       <Contact/>
     </div>
   )

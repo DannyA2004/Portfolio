@@ -17,7 +17,7 @@ export const NavBar = () => {
             <li><a href= "home" onClick={(event) => funcionNoRecargar(event, "home")}>Home</a></li>
             <li><a href="tecnologiesScroll" onClick={(event) => funcionNoRecargar(event, "tecnologiesScroll")}>Tecnologies</a></li>
             <li><a href="proyectsScroll" onClick={(event) => funcionNoRecargar(event, "proyectsScroll")}>Proyects</a></li>
-            <li><a href="#" onClick={(event) => funcionNoRecargar(event, "")}>Contact</a></li>
+            <li><a href="contactScroll" onClick={(event) => funcionNoRecargar(event, "contactScroll")}>Contact</a></li>
         </ul>
     </nav>
   )
