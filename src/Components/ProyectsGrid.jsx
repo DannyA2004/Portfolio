@@ -5,10 +5,13 @@ import heroesAppImage from "../Images/HeroesApp.png"
 import gifsAppImage from "../Images/gifsApp.png"
 import exampleImage from "../Images/Ejemplo.png"
 import cmasfitness from "../Images/cmasfitness.png"
+import gameVideo from "../videos/gameVideo.mp4"
 import htmlIcon from "../Icons/html-5.png"
 import cssIcon from "../Icons/css-3.png"
 import jsIcon from "../Icons/js.png"
 import reactIcon from "../Icons/react.png"
+import cSharpIcon from "../Icons/csharp.png"
+import unityIcon from "../Icons/unity.png"
 
 export const ProyectsGrid = () => {
     useEffect(() => {
@@ -56,9 +59,13 @@ export const ProyectsGrid = () => {
         </div>
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <img src={exampleImage} alt="Example App Image" className="proyects-images"/>
+                <video className='proyects-video' src={gameVideo} controls typeof='video/mp4'></video>
+                <h3>Jester's Trial game</h3>
+                <div className="tecnologies-used-card">
+                    <img src={cSharpIcon} alt="C# Icon" />
+                    <img src={unityIcon} alt="Css Icon" />
+                </div>
             </div>
-            <h3>Example App</h3>
         </div>
     </div>
   )
