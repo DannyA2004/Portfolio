@@ -1,8 +1,8 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import heroesAppImage from "../Images/HeroesApp.png"
-import gifsAppImage from "../Images/gifsApp.png"
+import HeroesAppImage from "../Images/HeroesApp.png"
+import GifsAppImage from "../Images/gifsApp.png"
 import cmasfitness from "../Images/cmasfitness.png"
 import gameVideo from "../videos/gameVideo.mp4"
 import htmlIcon from "../Icons/html-5.png"
@@ -34,7 +34,7 @@ export const ProyectsGrid = () => {
         </div>
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
+            <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={HeroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
             </div>
             <h3>Heroes App</h3>
             <div className="tecnologies-used-card">
@@ -46,7 +46,7 @@ export const ProyectsGrid = () => {
         </div>
          <div className="proyect-card">
            <div className="header-Proyect-card">
-            <a href="https://dannygifweb.netlify.app/" target="_blank"><img src={gifsAppImage} alt="Gifs App Image" className="proyects-images"/></a>
+            <a href="https://dannygifweb.netlify.app/" target="_blank"><img src={GifsAppImage} alt="Gifs App Image" className="proyects-images"/></a>
             </div>
             <h3>Gifs App</h3>
             <div className="tecnologies-used-card">
