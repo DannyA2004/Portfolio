@@ -3,7 +3,6 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import heroesAppImage from "../Images/HeroesApp.png"
 import gifsAppImage from "../Images/gifsApp.png"
-import exampleImage from "../Images/Ejemplo.png"
 import cmasfitness from "../Images/cmasfitness.png"
 import gameVideo from "../videos/gameVideo.mp4"
 import htmlIcon from "../Icons/html-5.png"
