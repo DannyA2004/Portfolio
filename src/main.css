@@ -375,6 +375,7 @@ form button:hover{
 
 .my-name {
     font-size: 20px;
+    text-align: center;
 }
 .career-text {
     font-size: 14px;
@@ -443,11 +444,13 @@ form button:hover{
     height: 170px;
     font-size: 18px;
     justify-items: center;
+    text-align: center;
 }
 
 .tecnologie-image-div img {
     max-width: 80px;
     margin-top: 20px;
+    justify-items: center;
 }
 
 .contact-box{
