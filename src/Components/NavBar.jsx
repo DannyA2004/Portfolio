@@ -15,8 +15,8 @@ export const NavBar = () => {
     <nav className="navbar" data-aos="fade-right">
         <ul className="nav-list">
             <li><a href= "home" onClick={(event) => funcionNoRecargar(event, "home")}>Home</a></li>
-            <li><a href="tecnologiesScroll" onClick={(event) => funcionNoRecargar(event, "tecnologiesScroll")}>Tecnologies</a></li>
             <li><a href="proyectsScroll" onClick={(event) => funcionNoRecargar(event, "proyectsScroll")}>Proyects</a></li>
+            <li><a href="tecnologiesScroll" onClick={(event) => funcionNoRecargar(event, "tecnologiesScroll")}>Tecnologies</a></li>
             <li><a href="contactScroll" onClick={(event) => funcionNoRecargar(event, "contactScroll")}>Contact</a></li>
         </ul>
     </nav>

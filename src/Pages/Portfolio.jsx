@@ -18,12 +18,12 @@ export const Portfolio = () => {
     <div className="main-container" id="home">
       <NavBar/>
       <PresentationCard/>
-      <p id="tecnologiesScroll"></p>
-      <h2 data-aos="zoom-in" className="titles" id="proyects">Tecnologies</h2>
-      <Tecnologiesgrid/>
       <p id="proyectsScroll"></p>
       <h2 data-aos="zoom-in" className="titles" id="proyects">PROYECTS</h2>
       <ProyectsGrid/>
+      <p id="tecnologiesScroll"></p>
+      <h2 data-aos="zoom-in" className="titles" id="proyects">Tecnologies</h2>
+      <Tecnologiesgrid/>
       <p id="contactScroll"></p>
       <Contact/>
     </div>
