@@ -59,7 +59,6 @@ body {
 .blur-container{
     padding: 5px 5px 5px 5px;
     border-radius: 15%;
-    background-color: rgba(255, 255, 255, .7);
     box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.8)
 }
 
@@ -68,17 +67,15 @@ body {
     height: 300px;
     border-radius: 15%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    filter: grayscale(.5);
 }
 
 .presentation-card{
     align-content: center;
-    justify-items: center;
 }
 
 .my-name {
-    display: flex;
     text-align: center;
-    align-items: center;
     color: #0ef;
     text-shadow: 2px 2px 5px rgb(55, 162, 170);
     font-family: "Montserrat";
@@ -260,7 +257,7 @@ body {
 }
 
 .input-field {
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .error {
@@ -271,8 +268,8 @@ body {
 }
 
 .field .item {
-    width: 100%;
     padding: 18px;
+    width: 400px;
     background: transparent;
     border: 2px solid #0ef;
     outline: none;
@@ -287,6 +284,7 @@ body {
 
 form .textarea-field .item {
     resize: none;
+    width: 400px;
 }
 
 form button {
@@ -454,8 +452,9 @@ form button:hover{
 }
 
 .contact-box{
-    min-width: 120px;
+    min-width: 200px;
     min-height: 1vh;
+    padding: 0 10px 0 10px;
     margin: 20px 0 20px 0;
 }
 
@@ -472,7 +471,7 @@ form button:hover{
 }
 
 .field .item {
-    width: 60%;
+    width: 220px;
     height: 5px;
     padding: 18px;
     font-size: 16px;
@@ -481,6 +480,7 @@ form button:hover{
 form .textarea-field .item {
     resize: none;
     height: 150px;
+    width: 220px;
 }
 
 .email-div{
@@ -634,7 +634,7 @@ form .textarea-field .item {
 }
 
 .field .item {
-    width: 100%;
+    width: 400px;
     height: 7px;
     padding: 18px;
     font-size: 18px;
