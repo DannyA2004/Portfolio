@@ -221,6 +221,11 @@ body {
     transform: rotateY(0deg);
   }
 }
+.tecnologie-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .tecnologie-image-div img {
     max-width: 100px;
