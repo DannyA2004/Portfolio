@@ -5,6 +5,7 @@ import { InView, useInView } from 'react-intersection-observer';
 import { useState , useRef, useEffect } from 'react';
 import emailjs from "@emailjs/browser"
 import copyIcon from "../Icons/copyIcon.png"
+import { SuccesAlert } from './SuccesAlert';
 
 export const Contact = () => {
     useEffect(() => {
@@ -17,10 +18,18 @@ export const Contact = () => {
         threshold: 0.1,
         triggerOnce:true
     })
-    const texto =TypingEffect("jes121avila@gmail.com",100,200, inView );
+    const texto = TypingEffect("jes121avila@gmail.com",100,200, inView );
     const form = useRef();
     const [errors, setErrors] = useState({});
+    const [showAlert, setShowAlert] = useState();
+    const handleShowAlert = () =>{
+        setShowAlert(true);
+    }
 
+    const handleAlertClose = () =>{
+        setShowAlert(false);
+    }
+    
     const inputRef = useRef(null);
 
     const handleCopy = () => {
@@ -84,7 +93,8 @@ export const Contact = () => {
         ).then(
             (result) => {
                 console.log(result.text);
-                alert("¡Mensaje enviado!");
+                handleShowAlert();
+                // alert("¡Mensaje enviado!");
                 form.current.reset();
             },
             (error) => {
@@ -128,7 +138,12 @@ export const Contact = () => {
                 </div>
                 <button type="submit">Send Email</button>
             </form>
-            
+                {showAlert && (
+                    <SuccesAlert
+                    onClose={handleAlertClose}
+                    />
+                )}
+                
 
         </div>
         

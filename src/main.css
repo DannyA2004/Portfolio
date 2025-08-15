@@ -354,6 +354,58 @@ form button:hover{
     width: 40px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.alert-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #292829;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.alert-message{
+    display: block;
+    font-size: 30px;
+    color: #0ef;
+}
+
+.close-button {
+   padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.close-button:hover{
+    box-shadow: none;
+}
+
+
 /*! Responsive Moviles */
 @media (max-width: 644px) {
 
@@ -519,6 +571,9 @@ form .textarea-field .item {
 
 .copy-icon{
     width: 30px;
+}
+.alert-message{
+    font-size: 20px;
 }
 }
 
