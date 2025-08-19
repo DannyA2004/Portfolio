@@ -24,10 +24,13 @@ export const Contact = () => {
     const [showAlert, setShowAlert] = useState();
     const handleShowAlert = () =>{
         setShowAlert(true);
+        document.body.style.overflow = "hidden";
+
     }
 
     const handleAlertClose = () =>{
         setShowAlert(false);
+         document.body.style.overflow = "auto";
     }
     
     const inputRef = useRef(null);
@@ -94,7 +97,6 @@ export const Contact = () => {
             (result) => {
                 console.log(result.text);
                 handleShowAlert();
-                // alert("¡Mensaje enviado!");
                 form.current.reset();
             },
             (error) => {

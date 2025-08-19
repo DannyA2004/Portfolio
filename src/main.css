@@ -194,7 +194,7 @@ body {
 .tecnologie-card {
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.6);
     width: 250px;
-    justify-items: center;
+    text-align: center;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     color: #FFFFFF;
@@ -364,6 +364,7 @@ form button:hover{
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    background-color: #000000b4;
 }
 .alert-div {
     position: fixed;
