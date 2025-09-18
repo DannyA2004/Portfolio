@@ -1,8 +1,8 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import heroesAppImage from "../assets/Images/HeroesApp.png"
-import gifsAppImage from "../assets/Images/GifsApp.png";
+import heroesAppImage from "../assets/Images/heroesApp.png"
+import gifsAppImage from "../assets/Images/gifsApp.png";
 import cmasfitness from "../assets/Images/cmasfitness.png"
 import gameVideo from "../assets/videos/gameVideo.mp4"
 import htmlIcon from "../assets/Icons/html-5.png"
