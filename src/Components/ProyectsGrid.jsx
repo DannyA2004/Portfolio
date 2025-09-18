@@ -1,7 +1,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import HeroesAppImage from "../assets/Images/HeroesApp.png"
+import heroesAppImage from "../assets/Images/HeroesApp.png"
 import gifsAppImage from "../assets/Images/GifsApp.png";
 import cmasfitness from "../assets/Images/cmasfitness.png"
 import gameVideo from "../assets/videos/gameVideo.mp4"
@@ -34,7 +34,7 @@ export const ProyectsGrid = () => {
         </div>
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={HeroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
+            <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
             </div>
             <h3>Heroes App</h3>
             <div className="tecnologies-used-card">
