@@ -1,12 +1,12 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import htmlIcon from "../Icons/html-5.png"
-import cssIcon from "../Icons/css-3.png"
-import jsIcon from "../Icons/js.png"
-import reactIcon from "../Icons/react.png"
-import pythonIcon from "../Icons/python.png"
-import fastApiIcon from "../Icons/FastAPI.png"
+import htmlIcon from "../assets/Icons/html-5.png"
+import cssIcon from "../assets/Icons/css-3.png"
+import jsIcon from "../assets/Icons/js.png"
+import reactIcon from "../assets/Icons/react.png"
+import pythonIcon from "../assets/Icons/python.png"
+import fastApiIcon from "../assets/Icons/FastAPI.png"
 
 export const Tecnologiesgrid = () => {
     useEffect(() => {

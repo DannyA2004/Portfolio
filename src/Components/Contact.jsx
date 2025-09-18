@@ -4,7 +4,7 @@ import { TypingEffect } from "../hooks/TypingEffect"
 import { InView, useInView } from 'react-intersection-observer';
 import { useState , useRef, useEffect } from 'react';
 import emailjs from "@emailjs/browser"
-import copyIcon from "../Icons/copyIcon.png"
+import copyIcon from "../assets/Icons/copyIcon.png"
 import { SuccesAlert } from './SuccesAlert';
 
 export const Contact = () => {

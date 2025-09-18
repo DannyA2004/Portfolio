@@ -1,16 +1,16 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import HeroesAppImage from "../Images/HeroesApp.png"
-import gifsAppImage from "../Images/GifsApp.png";
-import cmasfitness from "../Images/cmasfitness.png"
-import gameVideo from "../videos/gameVideo.mp4"
-import htmlIcon from "../Icons/html-5.png"
-import cssIcon from "../Icons/css-3.png"
-import jsIcon from "../Icons/js.png"
-import reactIcon from "../Icons/react.png"
-import cSharpIcon from "../Icons/csharp.png"
-import unityIcon from "../Icons/unity.png"
+import HeroesAppImage from "../assets/Images/HeroesApp.png"
+import gifsAppImage from "../assets/Images/GifsApp.png";
+import cmasfitness from "../assets/Images/cmasfitness.png"
+import gameVideo from "../assets/videos/gameVideo.mp4"
+import htmlIcon from "../assets/Icons/html-5.png"
+import cssIcon from "../assets/Icons/css-3.png"
+import jsIcon from "../assets/Icons/js.png"
+import reactIcon from "../assets/Icons/react.png"
+import cSharpIcon from "../assets/Icons/csharp.png"
+import unityIcon from "../assets/Icons/unity.png"
 
 export const ProyectsGrid = () => {
     useEffect(() => {

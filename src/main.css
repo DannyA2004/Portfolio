@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-image: url("/src/Images/Fondo.jpg");
+    background-image: url("/src/assets/Images/Fondo.jpg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -98,6 +98,43 @@ body {
     text-align: start;
     margin-left: 20px;
     font-size: 18px;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons{
+   width: 3rem;
+   height: 3rem;
+   padding: .1rem;
+   margin-right: 20px;
+   border-radius: 9999px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform-origin: center;
+   transform-box: fill-box;
+   transition: transform .5s  ease-in-out;
+   cursor: pointer;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+    
+}
+
+#linkedin{
+    --tw-bg-opacity: 1;
+    background-color: rgb(186 230 253 / var(--tw-bg-opacity, 1))
+}
+
+#github{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))
+
 }
 
 .titles{
@@ -440,6 +477,10 @@ form button:hover{
 .presentation-text {
     font-size: 12px;
     text-align: start;
+}
+
+.icons-container{
+    margin-bottom: 15px;
 }
 .titles{
     font-size: 30px;
