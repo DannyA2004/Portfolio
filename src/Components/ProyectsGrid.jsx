@@ -2,9 +2,12 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import heroesAppImage from "../assets/Images/heroesApp.png"
-import gifsAppImage from "../assets/Images/gifsApp.png";
+import skywellPage from "../assets/Images/skywellPage.png";
 import cmasfitness from "../assets/Images/cmasfitness.png"
 import gameVideo from "../assets/videos/gameVideo.mp4"
+import astroIcon from "../assets/Icons/astroIcon.png"
+import typeScriptIcon from "../assets/Icons/typeScriptIcon.png"
+import tailwindIcon from "../assets/Icons/tailwindIcon.png"
 import htmlIcon from "../assets/Icons/html-5.png"
 import cssIcon from "../assets/Icons/css-3.png"
 import jsIcon from "../assets/Icons/js.png"
@@ -22,6 +25,18 @@ export const ProyectsGrid = () => {
   return (
     <div className="proyects-grid" data-aos="fade-up">
         <div className="proyect-card">
+           <div className="header-Proyect-card">
+            <a href="https://skywell.vercel.app/" target="_blank"><img src={skywellPage} alt="Skywell Image" className="proyects-images"/></a>
+            </div>
+            <h3>Skywell</h3>
+            <div className="tecnologies-used-card">
+                <img src={astroIcon} alt="Astro Icon" />
+                <img src={tailwindIcon} alt="Tailwind Icon" />
+                <img src={typeScriptIcon} alt="TypeScript Icon" />
+            </div>
+        </div>
+
+        <div className="proyect-card">
             <div className="header-Proyect-card">
             <a href="https://cmasfitness.vercel.app/" target='_blank'><img src={cmasfitness} alt="cmasfitness App Image" className="proyects-images"/></a>
             </div>
@@ -37,18 +52,6 @@ export const ProyectsGrid = () => {
             <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
             </div>
             <h3>Heroes App</h3>
-            <div className="tecnologies-used-card">
-                <img src={htmlIcon} alt="Html Icon" />
-                <img src={cssIcon} alt="Css Icon" />
-                <img src={jsIcon} alt="Js Icon Icon" />
-                <img src={reactIcon} alt="React Icon" />
-            </div>
-        </div>
-         <div className="proyect-card">
-           <div className="header-Proyect-card">
-            <a href="https://dannygifweb.netlify.app/" target="_blank"><img src={gifsAppImage} alt="Gifs App Image" className="proyects-images"/></a>
-            </div>
-            <h3>Gifs App</h3>
             <div className="tecnologies-used-card">
                 <img src={htmlIcon} alt="Html Icon" />
                 <img src={cssIcon} alt="Css Icon" />

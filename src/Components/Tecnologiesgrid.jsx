@@ -7,6 +7,10 @@ import jsIcon from "../assets/Icons/js.png"
 import reactIcon from "../assets/Icons/react.png"
 import pythonIcon from "../assets/Icons/python.png"
 import fastApiIcon from "../assets/Icons/FastAPI.png"
+import tailwindIcon from "../assets/Icons/tailwindIcon.png"
+import astroIcon from "../assets/Icons/astroIcon.png"
+import typeScriptIcon from "../assets/Icons/typeScriptIcon.png"
+import mySqlIcon from "../assets/Icons/mySqlIcon.png"
 
 export const Tecnologiesgrid = () => {
     useEffect(() => {
@@ -15,44 +19,33 @@ export const Tecnologiesgrid = () => {
         once: true,  
         });
      }, []);
+
+    const technologies = [
+        { name: 'HTML', icon: htmlIcon },
+        { name: 'CSS', icon: cssIcon },
+        { name: 'Tailwind', icon: tailwindIcon },
+        { name: 'JavaScript', icon: jsIcon },
+        { name: 'React', icon: reactIcon },
+        { name: 'Astro', icon: astroIcon },
+        { name: 'TypeScript', icon: typeScriptIcon },
+        { name: 'Python', icon: pythonIcon },
+        { name: 'FastApi', icon: fastApiIcon },
+        { name: 'MySQL', icon: mySqlIcon },
+];
   return (
     <div data-aos="fade-up" className="tecnologies-grid">
-        <div className="tecnologie-card" style={{ animationDelay: `${1 * 2}s`,  animationDuration: `${6 * 2}s` }}>
+        {technologies.map((tech, index) => (
+            <div
+            key={tech.name}
+            className="tecnologie-card"
+            style={{ animationDelay: `${index * 2}s` }}
+            >
             <div className="tecnologie-image-div">
-            <img src={htmlIcon} alt="html Icon" />
+                <img src={tech.icon} alt={tech.name} />
             </div>
-            <h4>HTML</h4>
-        </div>
-        <div className="tecnologie-card" style={{ animationDelay: `${2 * 2}s`,  animationDuration: `${6 * 2}s` }}>
-            <div className="tecnologie-image-div">
-                <img src={cssIcon} alt="css Icon" />
+            <h4>{tech.name}</h4>
             </div>
-            <h4>CSS</h4>
-        </div>
-        <div className="tecnologie-card" style={{ animationDelay: `${3 * 2}s`,  animationDuration: `${6 * 2}s` }}>
-            <div className="tecnologie-image-div">
-                <img src={jsIcon} alt="Java Script Icon" />
-            </div>
-            <h4>JavaScript</h4>
-        </div>
-        <div className="tecnologie-card" style={{ animationDelay: `${4 * 2}s`,  animationDuration: `${6 * 2}s` }}>
-            <div className="tecnologie-image-div">
-                <img src={reactIcon} alt="React Icon" />
-            </div>
-            <h4>React</h4>
-        </div>
-        <div className="tecnologie-card" style={{ animationDelay: `${5 * 2}s`,  animationDuration: `${6 * 2}s` }}>
-            <div className="tecnologie-image-div">
-               <img src={pythonIcon} alt="html Icon" />
-            </div>
-            <h4>Python</h4>
-        </div>
-        <div className="tecnologie-card" style={{ animationDelay: `${6 * 2}s`,  animationDuration: `${6 * 2}s` }}>
-            <div className="tecnologie-image-div">
-                <img src={fastApiIcon} alt="html Icon" />
-            </div>
-            <h4>FastApi</h4>
-        </div>
+        ))}
     </div>
   )
 }
