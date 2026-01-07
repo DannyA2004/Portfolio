@@ -81,27 +81,23 @@ body {
 .my-name {
     text-align: center;
     color: #0ef;
-    text-shadow: 2px 2px 5px rgb(55, 162, 170);
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 40px;
     margin-top: 5px;
 }
-.career-text {
-    color: 	white;
-    font-family: "Roboto Mono";
-    font-weight: 600;
-    text-align: start;
-    margin-left: 20px;
-    font-size: 20px;
-}
+
 .presentation-text {
     color: white;
     font-family: "Roboto Mono";
+    letter-spacing: 2px;
     font-weight: 500;
     text-align: start;
     margin-left: 20px;
     font-size: 18px;
+    
 }
 
 .icons-container{

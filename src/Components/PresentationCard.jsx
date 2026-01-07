@@ -25,8 +25,7 @@ export const PresentationCard = () => {
         </div>
         <div className="presentation-card">
               <h2 className="my-name">H{displayedText}</h2>
-              <h2 className="career-text">Soy un estudiante de Ing. en Software a punto de egresar.</h2>
-            <h3 className="presentation-text">Actualmente, con mayor conocimiento en el frontend, pero cada día aprendiendo más sobre backend.</h3>
+              <h3 className="presentation-text">Estudiante de Ingeniería de Software con experiencia en desarrollo de software, motivado por aportar soluciones técnicas, aprender de entornos profesionales y contribuir al diseño e implementación de aplicaciones.</h3>
             <div className="icons-container">
                 <a  id="linkedin" className='icons' title='Ir a LinkedIn Daniel Avila' target='_blank' href="https://www.linkedin.com/in/daniel-avila-78072937a/">
                   <svg width={24} height={24}>
