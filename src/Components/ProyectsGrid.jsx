@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import heroesAppImage from "../assets/Images/heroesApp.png"
 import skywellPage from "../assets/Images/skywellPage.png";
-import cmasfitness from "../assets/Images/cmasfitness.png"
+import gifsApp from '../assets/Images/gifsApp.png'
 import gameVideo from "../assets/videos/gameVideo.mp4"
 import astroIcon from "../assets/Icons/astroIcon.png"
 import typeScriptIcon from "../assets/Icons/typeScriptIcon.png"
@@ -38,13 +38,14 @@ export const ProyectsGrid = () => {
 
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <a href="https://cmasfitness.vercel.app/" target='_blank'><img src={cmasfitness} alt="cmasfitness App Image" className="proyects-images"/></a>
+            <a href="https://dannygifsapp.netlify.app" target='_blank'><img src={gifsApp} alt="Gifs App Image" className="proyects-images"/></a>
             </div>
-            <h3>C+ Fitness</h3>
+            <h3>Gifs App</h3>
              <div className="tecnologies-used-card">
+                <img src={reactIcon} alt="React Icon" />
+                <img src={typeScriptIcon} alt="TypeScript Icon" />
                 <img src={htmlIcon} alt="Html Icon" />
                 <img src={cssIcon} alt="Css Icon" />
-                <img src={jsIcon} alt="Js Icon Icon" />
             </div>
         </div>
         <div className="proyect-card">
