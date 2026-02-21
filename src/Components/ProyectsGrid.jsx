@@ -38,18 +38,6 @@ export const ProyectsGrid = () => {
 
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <a href="https://dannygifsapp.netlify.app" target='_blank'><img src={gifsApp} alt="Gifs App Image" className="proyects-images"/></a>
-            </div>
-            <h3>Gifs App</h3>
-             <div className="tecnologies-used-card">
-                <img src={reactIcon} alt="React Icon" />
-                <img src={typeScriptIcon} alt="TypeScript Icon" />
-                <img src={htmlIcon} alt="Html Icon" />
-                <img src={cssIcon} alt="Css Icon" />
-            </div>
-        </div>
-        <div className="proyect-card">
-            <div className="header-Proyect-card">
             <a href="https://heroes-app-aplication.netlify.app/#/" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
             </div>
             <h3>Heroes App</h3>
@@ -59,6 +47,20 @@ export const ProyectsGrid = () => {
                 <img src={tailwindIcon} alt="Tailwind Icon" />
             </div>
         </div>
+
+        <div className="proyect-card">
+            <div className="header-Proyect-card">
+            <a href="https://dannygifsapp.netlify.app" target='_blank'><img src={gifsApp} alt="Gifs App Image" className="proyects-images"/></a>
+            </div>
+            <h3>Gifs App</h3>
+            <div className="tecnologies-used-card">
+                <img src={reactIcon} alt="React Icon" />
+                <img src={typeScriptIcon} alt="TypeScript Icon" />
+                <img src={htmlIcon} alt="Html Icon" />
+                <img src={cssIcon} alt="Css Icon" />
+            </div>
+        </div>
+       
         <div className="proyect-card">
             <div className="header-Proyect-card">
                 <video className='proyects-video' src={gameVideo} controls typeof='video/mp4'></video>
