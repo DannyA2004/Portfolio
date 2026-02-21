@@ -50,14 +50,13 @@ export const ProyectsGrid = () => {
         </div>
         <div className="proyect-card">
             <div className="header-Proyect-card">
-            <a href="https://heroes-spa-beta.vercel.app" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
+            <a href="https://heroes-app-aplication.netlify.app/#/" target="_blank"><img src={heroesAppImage} alt="Heroes App Image" className="proyects-images"/></a>
             </div>
             <h3>Heroes App</h3>
             <div className="tecnologies-used-card">
-                <img src={htmlIcon} alt="Html Icon" />
-                <img src={cssIcon} alt="Css Icon" />
-                <img src={jsIcon} alt="Js Icon Icon" />
                 <img src={reactIcon} alt="React Icon" />
+                <img src={typeScriptIcon} alt="TypeScript Icon" />
+                <img src={tailwindIcon} alt="Tailwind Icon" />
             </div>
         </div>
         <div className="proyect-card">
